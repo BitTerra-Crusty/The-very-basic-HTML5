@@ -1,0 +1,220 @@
+<!-- html5 Note this is only plain basic html no styling
+
+for more info about all the tags used in here, you can check html5 documentation, and try it out and see how it works
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My index page</title>
+	<meta charset="utf-8">
+	<meta name="description" content="the very basic html with no styles(css)">
+	<meta name="keyword" content="basic html, no styling, amosit">
+</head>
+<body>
+	<!-- ============================================================================================= -->
+	<header>
+		<!-- this is the main navigation NOTE: no styling present yet, then the list is stacked on top of each other(block) ..!inline-->
+		<nav>
+			<ul>
+				<li>My LOGO</li>
+				<li>Home</li>
+				<li>Profile</li>
+				<li><a href="contact.html">Contact</a></li>
+				<li>About</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- ============================================================================================= -->
+	<hr>
+	<br>
+	<!-- ============================================================================================= -->
+	<main>
+		<section>
+			<!-- ============================================================================================= -->
+			<article>
+				<h3>My article one header</h3>
+				<small>Created by Mahungele NA - date:32/jun/2018</small>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<a href="#">read more</a>
+				</p>
+			</article>
+			<article>
+				<h3>My article two header</h3>
+				<small>Created by Mahungele NA - date:32/jun/2018</small>
+				<p>
+					Lorem ipsum dolor sit amet, <strng>consectetur</strng> adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<a href="#">read more</a>
+				</p>
+			</article>
+			<!-- ============================================================================================= -->
+			<article>
+				<h3>My article three header</h3>
+				<small>Created by Mahungele NA - date:32/jun/2018</small>
+				<p>
+					Lorem ipsum dolor sit amet, <em>consectetur</em> adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<a href="#" target="_black">read more</a>
+				</p>
+			</article>
+			<!-- ============================================================================================= -->
+
+			<blockquote cite="https://amosit.com">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+				<a href="images/example.jpg"><img src="images/example.jpg" width="200px" alt="my example picture"></a>
+			</blockquote>
+			<br>
+			<!-- ============================================================================================= -->
+
+			<hr>
+			<br>
+			<!-- this is form to be submitted to a server with the entered values -->
+
+			<div>
+				<form action="register.php" method="POST">
+					<!-- this is inputs with label linked with a specific input using IDs -->
+					<!-- ============================================================================================= -->
+					<div>
+						<label for="first-name">First name</label>
+						<input type="text" name="firstName" placeholder="Enter your first name" id="first-name">
+					</div>
+					<br>
+					<div>
+						<label for="last-name">Last name</label>
+						<input type="text" name="lastName" placeholder="Enter your last name" id="last-name">
+					</div>
+					<br>
+					<div>
+						<label for="email">Email</label>
+						<input type="email" name="email" placeholder="Enter your email" id="email">
+					</div>
+					<br>
+					<div>
+						<label for="birth-day">Birth day</label>
+						<input type="date" name="bDate" placeholder="Enter your birth date" id="birth-day">
+					</div>
+					<br>
+					<div>
+						<label for="age">Age</label>
+						<input type="number" name="age" value="27" id="age">
+					</div>
+					<br>
+					<div>
+						<label for="password">Password</label>
+						<input type="password" name="password" placeholder="Enter your password" id="password">
+					</div>
+					<br>
+					<!-- ============================================================================================= -->
+					<!-- this is drop down list -->
+					<div>
+						<label for="gender">Gender</label>
+						<select name="gender" id="gender">
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+					<br>
+					<!-- ============================================================================================= -->
+					<!-- this is radio buttons -->
+					<div>
+						<label><strong>Gender</strong></label><br>
+						<label>Male: </label> <input type="radio" name="sex" value="Male" checked="checked">
+						<label>Female: </label> <input type="radio" name="sex" value="Female">
+						<label>Other: </label> <input type="radio" name="sex" value="Other">
+					</div>
+					<br>
+					<!-- ============================================================================================= -->
+					<!-- this is check boxes -->
+					<div>
+						<label><strong>check lists</strong></label><br>
+						<label>Playing game:</label>
+						<input type="checkbox" name="fun" value="Game">
+						<label>Camping:</label>
+						<input type="checkbox" name="fn" value="Camp">
+						<label>Reading:</label>
+						<input type="checkbox" name="fun" value="Read">
+					</div>
+					<br>
+					<input type="submit" name="submit" value="submit">
+				</form>
+			</div>
+		</section>
+		<!-- ============================================================================================= -->
+	</main>
+	<!-- this is for site navigation -->
+	<aside>
+		<nav>
+			<h4>Categories unordered</h4>
+			<ul>
+				<li>Number one</li>
+				<li>Number Three</li>
+				<li>Number Four</li>
+			</ul>
+			<h4>Categories ordered</h4>
+			<ol>
+				<li>Number one</li>
+				<li>Number Three</li>
+				<li>Number Four</li>
+			</ol>
+		</nav>
+	</aside>
+
+<!-- ============================================================================================= -->
+	<!-- table -->
+	<table border="1" cellspacing="0" cellpadding="2">
+		<thead>
+			<tr>
+				<th colspan="3" bgcolor="gray">List of employees</th>
+			</tr>
+			<tr>
+				<th>First name</th>
+				<th>Last name</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Andy</td>
+				<td>Anderset</td>
+				<td>andy@amosit.com</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Jack</td>
+				<td>Johnson</td>
+				<td>jack@yahoo.com</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- ============================================================================================= -->
+	<footer>
+		<p>copyright &copy 2019</p>
+	</footer>
+	<!-- ============================================================================================= -->
+</body>
+</html>
